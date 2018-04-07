@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Penggunaan Table</title>
+</head>
+<body>
+
+
+Table Rowspan
+	<table border="1">
+		<tr>
+			<th>Nama</th>
+			<th>Kelas</th>
+			<th>Asal</th>
+		</tr>
+		<tr>
+			<td>Dono</td>
+			<td>2</td>
+			<td rowspan="2">Cilegon</td>
+		</tr>
+		<tr>
+			<td>Doni</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Tina</td>
+			<td>5</td>
+			<td>Jakarta</td>
+		</tr>
+	</table>
+<p></p>
+
+
+Table Colspan
+	<table border="1">
+		<tr>
+			<th colspan="3">Buah Kesukaan</th>
+		</tr>
+		<tr>
+			<td>Jeruk</td>
+			<td>Pisang</td>
+			<td>Mangga</td>
+		</tr>
+	</table>
+	<p></p>
+
+	
+Kombinasi Colspan dan Rowspan
+	<table>
+		<style type="text/css">
+			table,th,td{
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			table{width: 35%}
+			th, td{text-align: center;}
+		</style>
+		<tr>
+			<th rowspan="2">No</th>
+			<th rowspan="2">Kelas</th>
+			<th rowspan="2">Nama</th>
+			<th colspan="3">Keterangan</th>
+		</tr>
+		<tr>
+			<td>Hadir</td>
+			<td>Izin</td>
+			<td>Sakit</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>Dono</td>
+			<td>7</td>
+			<td>2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>3</td>
+			<td>Doni</td>
+			<td>10</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+</body>
+</html>
