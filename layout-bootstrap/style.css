@@ -1,0 +1,58 @@
+.header{
+	background: #ff8080;
+	height: 150px;
+	margin:0 auto;
+}
+
+.header h1{
+	text-align: right;
+	margin-right: 25px;
+	font-family: verdana;
+}
+
+.header small{
+	font-size: 50%;
+	
+}
+
+.menu{
+	background: #0ff0f0;
+	height: 30px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+.menu ul li{
+	display: inline-block;
+}
+
+.menu ul li a{
+	margin: 15px;
+	padding: 14px 16px;
+	color: #fff;
+	font-family: verdana;
+	text-decoration: none;
+	-webkit-transition: width 2s;
+	transition: height 2s;
+}
+.menu ul li a:hover{
+	background-color: #00f000;
+	height: 50px;
+}
+
+.subc{
+	font-size: 200%;
+	height: 350px;
+	margin: 5px;
+	background: #ffffff;
+	float: left;
+	border-radius:10px;
+}
+
+.content{
+	margin: 0 auto;
+	background: #001200;
+	width: 950px;
+	height: 500px;
+}

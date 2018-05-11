@@ -24,23 +24,38 @@
 	text-align: left;
 }
 
-.menu div:hover{
-	-webkit-transition: width 2s;
-}
+
 .menu ul li{
 	display: inline-block;
 }
 
 .menu ul li a{
 	margin: 15px;
-	
+	padding: 14px 16px;
 	color: #fff;
 	font-family: verdana;
 	text-decoration: none;
+	-webkit-transition: width 2s;
+	transition: height 2s;
 }
 .menu ul li a:hover{
 	background-color: #00f000;
-	-webkit-transition: width 2s;
+	height: 50px;
 }
 
-.content{}
+.subc{
+	font-size: 200%;
+	width: 275px;
+	height: 350px;
+	margin: 5px;
+	background: #ffffff;
+	float: left;
+	border-radius:10px;
+}
+
+.content{
+	margin: 0 auto;
+	background: #001200;
+	width: 950px;
+	height: 500px;
+}
