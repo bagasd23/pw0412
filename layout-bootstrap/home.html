@@ -17,20 +17,34 @@
         	.when("/about", {
         		templateUrl : "about.html"
         	})
-
-		});
+        	.when("/maps",{
+        		templateUrl : "maps.html"
+        	})
+		})
+		app.controller('mainCtrl', function($scope){
+			$scope.title = "Bukan Facebook"
+			$scope.text1 = "Ini Budi"
+			$scope.text2 = "Ini bukan Budi"
+			$scope.text3 = "Ini teman Budi"
+		})
+		app.controller('weatherCtrl',function($scope, $http){
+			$http.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=4de4dd041e499ca8a4f6692097befdae')
+			.then(function(response){
+				$scope.info = response.data;
+			});
+		})
 	</script>
 </head>
 <body>
-<div ng-app="myApp" class="container-fluid">
+<div ng-app="myApp" ng-controller="mainCtrl" class="container-fluid">
 	<div class="row">
 		<div class="col-md-12 header">
-			<h1>PW0412</h1>
+			<h1>{{title}}</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12 menu">
-			<i class="fas fa-home"></i><a href="#!">Home</a> | <a href="#!about">About</a> | Product | Contact
+			<i class="fas fa-home"></i><a href="#!">Home</a> | <a href="#!maps">Maps</a>| <a href="#!about">About</a> 
 		</div>
 	</div>
 	<ng-view></ng-view>
