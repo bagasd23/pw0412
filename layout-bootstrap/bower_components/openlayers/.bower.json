@@ -1,0 +1,14 @@
+{
+  "name": "openlayers",
+  "_cacheHeaders": {
+    "ETag": "\"656e2444d07628569bbff9cd761458dc\"",
+    "Last-Modified": "Tue, 26 Sep 2017 06:14:55 GMT",
+    "Content-Length": "600009",
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=v4.3.4-dist.zip"
+  },
+  "_release": "e-tag:656e2444d",
+  "_source": "https://github.com/openlayers/ol3/releases/download/v4.3.4/v4.3.4-dist.zip",
+  "_target": "*",
+  "_originalSource": "https://github.com/openlayers/ol3/releases/download/v4.3.4/v4.3.4-dist.zip"
+}
